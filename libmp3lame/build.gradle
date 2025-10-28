@@ -38,9 +38,6 @@ afterEvaluate {
         groupId = 'com.github.mengliuxian'   // GitHub 用户名
         artifactId = 'libmp3lame'            // 库名
         version = '1.0.0'                    // 和 tag 对应
-
-        // 指定要发布的 AAR 文件
-        artifact(bundleReleaseAar)
       }
     }
   }
