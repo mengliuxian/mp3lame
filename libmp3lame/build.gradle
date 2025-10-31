@@ -47,7 +47,7 @@ afterEvaluate {
         from components.release
         groupId = 'com.github.mengliuxian'   // GitHub 用户名
         artifactId = 'libmp3lame'            // 库名
-        version = '1.0.1'                    // 和 tag 对应
+        version = '1.0.2'                    // 和 tag 对应
 
         pom {
           licenses {
