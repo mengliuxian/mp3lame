@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "mp3lame"
 include ':app'
 include ':libmp3lame'
+include ':liblame'

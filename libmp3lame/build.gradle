@@ -14,6 +14,23 @@ android {
     consumerProguardFiles "consumer-rules.pro"
   }
 
+  // ✅ 打包 LICENSE 文件进 AAR 的 META-INF
+  sourceSets {
+    main {
+      resources {
+        srcDirs += [rootProject.rootDir]  // 指向根目录
+        includes += ['LICENSE'] // 只包含 LICENSE 文件
+      }
+    }
+  }
+
+  // ✅ 确保 LICENSE 文件不会被排除
+  packaging {
+    resources {
+      pickFirsts += ['META-INF/LICENSE']
+    }
+  }
+
   publishing {
     singleVariant("release")
   }
